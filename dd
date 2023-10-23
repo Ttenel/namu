@@ -1,0 +1,16 @@
+chess_players = {
+    "Carlsen, Magnus": 1865,
+    "Firouzja, Alireza": 2804,
+    "Ding, Liren": 2799,
+    "Caruana, Fabiano": 1792,
+    "Nepomniachtchi, Ian": 2773}
+
+a = {}
+
+for zaidejas, reitingas in chess_players.items():
+    if reitingas > 2000:
+        pavarde, vardas = zaidejas.split(', ')
+        b = f"{pavarde} {vardas[0]}."
+        a[reitingas] = b
+
+print(a)

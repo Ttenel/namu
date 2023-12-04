@@ -1,0 +1,22 @@
+#Random funkcijos naudojimas
+import random #Įtraukiame random biblioteką
+
+random.randint(1, 20) #Sugeneruojame atsitiktinį sveikajį skačių nuo 1 iki 20
+
+#Parašykite ir išbandykite funkciją kuri funkcijos viduje paprašytų įvesti du kaičius ir grąžintų atsitiktinį skaičių
+#intervale tarp tų dviejų skaičių. Funkcija turite sukurti be argumentų
+
+
+def my_function():
+    a = int(input("Įveskite 1 skaičių: "))
+    b = int(input("Įveskite 2 skaičių: "))
+
+    if a < b:
+        rand = random.randint(a, b)
+    else:
+        rand = random.randint(b, a)
+
+    return rand
+
+randsk = my_function()
+print(randsk)
